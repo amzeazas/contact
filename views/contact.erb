@@ -33,11 +33,12 @@ Mailing Address(es):
 <br>
 <br>
 <form action="/contact/:id" method="post">
+  <input id='contact_id' name='contact_id' type='hidden' value='<%= @contact.id() %>'>
   <label for="emails">Email Address:</label>
   <br>
-  <input id="email_type" name="email_type" type="text" placeholder="Put email type here.">
-  <br>
   <input id="email" name="email" type="text" placeholder="Put email address here.">
+  <br>
+  <input id="email_type" name="email_type" type="text" placeholder="Put email type here.">
   <br>
   <br>
   <label for="phone_number">Phone Number:</label>
@@ -57,7 +58,7 @@ Mailing Address(es):
   <br>
   <input id="state" name="state" type="text" placeholder="Put state here.">
   <br>
-  <input id="zip" name="zip" type="text" placeholder="Put email address here.">
+  <input id="zip" name="zip" type="text" placeholder="Put zip code here.">
   <br>
   <input id="mail_type" name="mail_type" type="text" placeholder="Put mail type here.">
   <br>
